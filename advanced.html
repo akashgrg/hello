@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        .leftmargin {
+            margin-left: 20px;
+        }
+
+        #font {
+            font-size: 15px;
+        }
+
+        button {
+            position: absolute;
+            top: 10px;
+            right: 262px;
+        }
+
+        #advancedsearch {
+            margin-left: 40px;
+            color:red;
+            font-size: large;
+        }
+
+        #search {
+            margin-right: 40px;
+            color: black;
+            font-size: small;
+        }
+
+        .helptext {
+            font-size: x-small;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Just an image -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="/Users/akashgurung/Desktop/search/index.html">
+            <img src="/Users/akashgurung/hello/test folder /googlelogo.png" style="margin-left:20px" width="90" height="auto" alt="">
+        </a>
+    </nav>
+    <div style="overflow: hidden;">
+        <br>
+        <p style="float: left;" id="advancedsearch">Advanced Search</p>
+        <a href="/Users/akashgurung/Desktop/search/index.html" style="float: right;" id="search">Search</a>
+        <br>
+        <hr class="col-xs-12" />
+        <p class="leftmargin">Find pages with...</p>
+    </div>
+    <form action="https://google.com/search" class="leftmargin">
+        <div class="form-group row">
+            <label for="all" class="col-sm-2 col-form-label" id="font">all these words:</label>
+            <div class="col-lg-6 col-sm-6">
+                <input type="text" name="q" class="form-control" id="all">
+            </div>
+            <p for="all" class="helptext" >Type the important words: tri-colour rat terrier</p>
+        </div>
+        <div class="form-group row">
+            <label for="exact" class="col-sm-2 col-form-label" id="font">this exact word or phrase:</label>
+            <div class="col-lg-6 col-sm-6">
+                <input type="text" name="as_epq" class="form-control" id="exact">
+            </div>
+            <p for="all" class="helptext" >Put exact words in quotes: "rat terrier"</p>
+        </div>
+        <div class="form-group row">
+            <label for="any" class="col-sm-2 col-form-label" id="font">any of these words:</label>
+            <div class="col-lg-6 col-sm-6">
+                <input type="text" name="as_oq" class="form-control" id="any">
+            </div>
+            <p for="all" class="helptext" >Type OR between all the words you want: miniature OR standard</p>
+        </div>
+
+        <div class="form-group row">
+            <label for="none" class="col-sm-2 col-form-label" id="font">none of these words:</label>
+            <div class="col-lg-6 col-sm-6">
+                <input type="text" name="as_eq" class="form-control" id="none">
+            </div>
+            <p for="all" class="helptext" >Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</p>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary" style="margin: right">Advanced Search</button>
+            </div>
+        </div>
+    </form>
+    <br>
+    <hr style="width:85%">
+</body>
+
+</html>
